@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── DARK MODE (default) ─────────────────────────────────────── */
+:root,
+[data-theme="dark"] {
+  --background: #080808;
+  --surface: #111111;
+  --surface-elevated: #161616;
+  --primary: #C9A96E;
+  --primary-muted: #8B6F47;
+  --text: #F0EDE8;
+  --text-muted: #666666;
+  --border: #1E1E1E;
+  --border2: #2a2a2a;
+  --success: #4ADE80;
+  --scrollbar-track: #0d0d0d;
+  --scrollbar-thumb: #C9A96E;
+  --scrollbar-thumb-hover: #e0c28a;
+  color-scheme: dark;
+}
+
+/* ── LIGHT MODE ──────────────────────────────────────────────── */
+[data-theme="light"] {
+  --background: #F8F6F1;
+  --surface: #EFECE5;
+  --surface-elevated: #E8E4DA;
+  --primary: #8B6F47;
+  --primary-muted: #C9A96E;
+  --text: #1a1814;
+  --text-muted: #7a7268;
+  --border: #D9D4C8;
+  --border2: #C8C2B4;
+  --success: #16a34a;
+  --scrollbar-track: #EFECE5;
+  --scrollbar-thumb: #8B6F47;
+  --scrollbar-thumb-hover: #C9A96E;
+  color-scheme: light;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+/* Persian/RTL */
+[dir="rtl"] body,
+[dir="rtl"] {
+  font-family: 'Vazirmatn', Tahoma, sans-serif;
+  line-height: 1.9;
+}
+
+/* Noise overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
+
+::selection {
+  background: rgba(201,169,110,0.22);
+  color: var(--text);
+}
+
+/* ── CUSTOM SCROLLBAR ───────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    var(--scrollbar-thumb) 30%,
+    var(--scrollbar-thumb) 70%,
+    transparent 100%
+  );
+  border-radius: 3px;
+  transition: background 0.2s;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    var(--scrollbar-thumb-hover) 20%,
+    var(--scrollbar-thumb-hover) 80%,
+    transparent 100%
+  );
+}
+::-webkit-scrollbar-corner {
+  background: var(--scrollbar-track);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+/* ── UTILITIES ──────────────────────────────────────────────── */
+.section-padding { padding: 7rem 0; }
+@media (max-width: 768px) { .section-padding { padding: 5rem 0; } }
+
+/* Lenis */
+html.lenis { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }

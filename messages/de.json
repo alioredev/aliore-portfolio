@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "about": "Über mich",
+    "projects": "Projekte",
+    "skills": "Fähigkeiten",
+    "contact": "Kontakt",
+    "resume": "Lebenslauf ↓"
+  },
+  "hero": {
+    "role": "Webdesigner & KI-Spezialist",
+    "tagline": "Intelligente digitale Erlebnisse gestalten",
+    "brand": "Aliore",
+    "cta_projects": "Projekte ansehen",
+    "cta_contact": "Kontakt aufnehmen",
+    "scroll": "scrollen"
+  },
+  "about": {
+    "label": "Über mich",
+    "heading": "Die Zukunft gestalten,",
+    "heading_italic": "ein Projekt nach dem anderen.",
+    "bio": "Ich bin Ali Gholami, ein Webdesigner und KI-Spezialist mit Fokus auf intelligente, hochwertige digitale Produkte. Ich verbinde sauberes Frontend-Engineering mit KI-Integration, um Erlebnisse zu schaffen, die sowohl funktional als auch verfeinert sind. Derzeit baue ich Aliore auf — meine persönliche Marke für internationale Kunden und Kooperationen.",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "stats": {
+    "years": "Jahr Erfahrung",
+    "projects": "Projekte",
+    "languages": "Sprachen",
+    "brand": "Marke"
+  },
+  "skills": {
+    "label": "Fähigkeiten",
+    "heading": "Womit ich",
+    "heading_italic": "arbeite"
+  },
+  "projects": {
+    "label": "Projekte",
+    "heading": "Ausgewählte",
+    "heading_italic": "Arbeiten",
+    "live": "Live-Demo ↗",
+    "github": "GitHub ↗",
+    "more": "Mehr auf GitHub →"
+  },
+  "contact": {
+    "label": "Kontakt",
+    "heading": "Lass uns etwas",
+    "heading_italic": "aufbauen.",
+    "subtext": "Verfügbar für Freelance-Projekte und Kooperationen weltweit.",
+    "location": "Ansässig im Iran · Offen für Remote-Möglichkeiten weltweit",
+    "email_label": "E-Mail",
+    "github_label": "GitHub",
+    "linkedin_label": "LinkedIn",
+    "telegram_label": "Telegram",
+    "rubika_label": "Rubika"
+  },
+  "footer": {
+    "copy": "© 2026 Ali Gholami — Aliore",
+    "domain": "aliore.ir"
+  },
+  "theme": {
+    "dark": "Dunkel",
+    "light": "Hell"
+  }
+}
