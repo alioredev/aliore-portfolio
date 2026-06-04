@@ -60,5 +60,11 @@
   "theme": {
     "dark": "Dark",
     "light": "Light"
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "heading": "What clients",
+    "heading_italic": "say.",
+    "note": "Real feedback from real collaborations"
   }
 }

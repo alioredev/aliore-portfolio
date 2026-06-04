@@ -60,5 +60,11 @@
   "theme": {
     "dark": "Dunkel",
     "light": "Hell"
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "heading": "Was Kunden",
+    "heading_italic": "sagen.",
+    "note": "Echtes Feedback aus echten Kooperationen"
   }
 }
