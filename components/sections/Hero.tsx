@@ -6,7 +6,9 @@ import { useTranslations } from "next-intl";
 import { siteConfig } from "@/lib/data";
 import Button from "@/components/ui/Button";
 
-const HeroScene = dynamic(() => import("@/components/three/HeroScene"), { ssr: false });
+const HeroScene = dynamic(() => import("@/components/three/HeroScene"), {
+  ssr: false,
+});
 
 const container = {
   hidden: {},
@@ -14,7 +16,11 @@ const container = {
 };
 const item = {
   hidden: { opacity: 0, y: 28 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.75, ease: [0.25, 0.46, 0.45, 0.94] } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.75, ease: [0.25, 0.46, 0.45, 0.94] },
+  },
 };
 
 export default function Hero() {
@@ -31,7 +37,10 @@ export default function Hero() {
       {/* Dark gradient at base for text legibility */}
       <div
         className="absolute bottom-0 left-0 right-0 h-1/3 pointer-events-none"
-        style={{ background: "linear-gradient(to top, var(--background), transparent)", zIndex: 1 }}
+        style={{
+          background: "linear-gradient(to top, var(--background), transparent)",
+          zIndex: 1,
+        }}
       />
 
       <motion.div
@@ -60,7 +69,7 @@ export default function Hero() {
           style={{
             fontFamily: "'Playfair Display', Georgia, serif",
             fontSize: "clamp(3.2rem, 9vw, 7.5rem)",
-            color: "var(--text)",
+            color: "var(--hero-name)",
             letterSpacing: "-0.02em",
             textShadow: "0 0 80px rgba(201,169,110,0.12)",
           }}
@@ -79,14 +88,25 @@ export default function Hero() {
         <motion.p
           variants={item}
           className="text-sm tracking-[0.3em] italic"
-          style={{ fontFamily: "'Playfair Display', Georgia, serif", color: "var(--primary)", opacity: 0.75 }}
+          style={{
+            fontFamily: "'Playfair Display', Georgia, serif",
+            color: "var(--primary)",
+            opacity: 0.75,
+          }}
         >
           — {t("brand")}
         </motion.p>
 
-        <motion.div variants={item} className="flex flex-wrap gap-4 justify-center mt-2">
-          <Button href="#projects" variant="primary">{t("cta_projects")}</Button>
-          <Button href="#contact" variant="ghost">{t("cta_contact")}</Button>
+        <motion.div
+          variants={item}
+          className="flex flex-wrap gap-4 justify-center mt-2"
+        >
+          <Button href="#projects" variant="primary">
+            {t("cta_projects")}
+          </Button>
+          <Button href="#contact" variant="ghost">
+            {t("cta_contact")}
+          </Button>
         </motion.div>
       </motion.div>
 
@@ -103,15 +123,42 @@ export default function Hero() {
           transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
           className="flex flex-col items-center gap-1.5"
         >
-          <span className="text-xs tracking-[0.15em]" style={{ color: "var(--text-muted)", fontFamily: "'JetBrains Mono', monospace" }}>
+          <span
+            className="text-xs tracking-[0.15em]"
+            style={{
+              color: "var(--text-muted)",
+              fontFamily: "'JetBrains Mono', monospace",
+            }}
+          >
             {t("scroll")}
           </span>
-          <svg width="14" height="22" viewBox="0 0 14 22" fill="none" style={{ color: "var(--text-muted)" }}>
-            <rect x="1" y="1" width="12" height="20" rx="6" stroke="currentColor" strokeWidth="1"/>
+          <svg
+            width="14"
+            height="22"
+            viewBox="0 0 14 22"
+            fill="none"
+            style={{ color: "var(--text-muted)" }}
+          >
+            <rect
+              x="1"
+              y="1"
+              width="12"
+              height="20"
+              rx="6"
+              stroke="currentColor"
+              strokeWidth="1"
+            />
             <motion.circle
-              cx="7" cy="7" r="2.5" fill="currentColor"
+              cx="7"
+              cy="7"
+              r="2.5"
+              fill="currentColor"
               animate={{ cy: [7, 14, 7] }}
-              transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+              transition={{
+                duration: 1.6,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
             />
           </svg>
         </motion.div>

@@ -60,5 +60,11 @@
   "theme": {
     "dark": "暗色",
     "light": "亮色"
+  },
+  "testimonials": {
+    "label": "客户评价",
+    "heading": "客户",
+    "heading_italic": "怎么说.",
+    "note": "来自真实合作的真实反馈"
   }
 }
