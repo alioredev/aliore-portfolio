@@ -136,7 +136,7 @@ function ScrollTrack({
 
     animRef.current = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(animRef.current);
-  }, [reversed]);
+  }, [reversed, items.length]);
 
   return (
     <div
@@ -160,7 +160,7 @@ function ScrollTrack({
   );
 }
 
-// ── Section ──────────────────────────────────────────────────────────────────
+// ── Section ─────────────────────────────────────────────────────────────────
 export default function Testimonials() {
   const t = useTranslations("testimonials");
 
