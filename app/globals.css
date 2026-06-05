@@ -60,11 +60,20 @@ body {
   font-weight: 400;
   line-height: 1.7;
   overflow-x: hidden;
+  padding-left: max(1rem, env(safe-area-inset-left));
+  padding-right: max(1rem, env(safe-area-inset-right));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition:
     background-color 0.35s ease,
     color 0.35s ease;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 /* Persian/RTL */
@@ -133,6 +142,11 @@ body::after {
   padding: 7rem 0;
 }
 @media (max-width: 768px) {
+  body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .section-padding {
     padding: 5rem 0;
   }

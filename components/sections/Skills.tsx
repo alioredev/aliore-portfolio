@@ -6,14 +6,23 @@ import { skillGroups } from "@/lib/data";
 import SectionHeading from "@/components/ui/SectionHeading";
 import dynamic from "next/dynamic";
 
-const SkillsOrb = dynamic(() => import("@/components/three/SkillsOrb"), { ssr: false });
+const SkillsOrb = dynamic(() => import("@/components/three/SkillsOrb"), {
+  ssr: false,
+});
 
 export default function Skills() {
   const t = useTranslations("skills");
 
   return (
-    <section id="skills" className="section-padding px-6 md:px-12 max-w-6xl mx-auto">
-      <SectionHeading label={t("label")} title={t("heading")} titleItalic={t("heading_italic")} />
+    <section
+      id="skills"
+      className="section-padding px-4 sm:px-6 md:px-12 max-w-6xl mx-auto"
+    >
+      <SectionHeading
+        label={t("label")}
+        title={t("heading")}
+        titleItalic={t("heading_italic")}
+      />
 
       <div className="grid md:grid-cols-2 gap-12 items-center">
         {/* Left: categorized skill list */}
@@ -28,8 +37,13 @@ export default function Skills() {
               className="border-t pt-6"
               style={{ borderColor: "var(--border)" }}
             >
-              <p className="text-xs tracking-[0.14em] uppercase mb-3"
-                style={{ color: "var(--primary)", fontFamily: "'JetBrains Mono', monospace" }}>
+              <p
+                className="text-xs tracking-[0.14em] uppercase mb-3"
+                style={{
+                  color: "var(--primary)",
+                  fontFamily: "'JetBrains Mono', monospace",
+                }}
+              >
                 {group.category}
               </p>
               <div className="flex flex-wrap gap-2">
@@ -39,7 +53,10 @@ export default function Skills() {
                     initial={{ opacity: 0, scale: 0.88 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: gi * 0.06 + si * 0.035 }}
+                    transition={{
+                      duration: 0.3,
+                      delay: gi * 0.06 + si * 0.035,
+                    }}
                     className="px-3 py-1.5 text-xs border rounded-full"
                     style={{
                       fontFamily: "'JetBrains Mono', monospace",
@@ -75,7 +92,11 @@ export default function Skills() {
           <SkillsOrb />
           <p
             className="absolute bottom-3 left-1/2 -translate-x-1/2 text-xs"
-            style={{ color: "var(--text-muted)", fontFamily: "'JetBrains Mono', monospace", letterSpacing: "0.08em" }}
+            style={{
+              color: "var(--text-muted)",
+              fontFamily: "'JetBrains Mono', monospace",
+              letterSpacing: "0.08em",
+            }}
           >
             drag to rotate
           </p>
