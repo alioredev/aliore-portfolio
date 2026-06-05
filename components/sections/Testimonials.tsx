@@ -165,7 +165,10 @@ export default function Testimonials() {
   const t = useTranslations("testimonials");
 
   return (
-    <section id="testimonials" className="section-padding overflow-hidden">
+    <section
+      id="testimonials"
+      className="section-padding px-4 sm:px-6 md:px-10 lg:px-14 overflow-hidden"
+    >
       {/* Heading */}
       <div className="px-4 sm:px-6 md:px-10 lg:px-14 max-w-6xl mx-auto mb-14">
         <motion.p

@@ -29,7 +29,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex flex-col items-center justify-center min-h-screen px-6 text-center overflow-hidden"
+      className="relative flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 text-center overflow-hidden"
     >
       {/* 3D canvas background */}
       <HeroScene />
