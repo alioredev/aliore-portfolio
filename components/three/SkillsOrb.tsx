@@ -41,12 +41,6 @@ function SkillNode({
   const [hovered, setHovered] = useState(false);
   const { camera } = useThree();
 
-  // Determine if this node is facing the camera (front half of sphere)
-  const isFront = useMemo(() => {
-    const dir = position.clone().normalize();
-    return dir.z > -0.1;
-  }, [position]);
-
   useFrame(() => {
     if (!meshRef.current) return;
     // Recalculate front/back dynamically based on current rotation
@@ -55,7 +49,7 @@ function SkillNode({
     const camDir = camera.position.clone().normalize();
     const dot = worldPos.normalize().dot(camDir);
     const opacity = THREE.MathUtils.clamp(dot * 2 + 0.5, 0, 1);
-    (meshRef.current.material as THREE.MeshBasicMaterial).opacity = hovered
+    (meshRef.current.material as THREE.MathUtils.MathUtils).opacity = hovered
       ? 1
       : opacity * 0.8 + 0.1;
   });
