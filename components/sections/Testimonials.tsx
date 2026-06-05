@@ -160,7 +160,7 @@ function ScrollTrack({
   );
 }
 
-// ── Section ─────────────────────────────────────────────────────────────────
+// ── Section ──────────────────────────────────────────────────────────────────
 export default function Testimonials() {
   const t = useTranslations("testimonials");
 
