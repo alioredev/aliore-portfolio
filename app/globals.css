@@ -133,6 +133,11 @@ body::after {
   padding: 7rem 0;
 }
 @media (max-width: 768px) {
+  body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .section-padding {
     padding: 5rem 0;
   }
