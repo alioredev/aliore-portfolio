@@ -49,7 +49,7 @@ function SkillNode({
     const camDir = camera.position.clone().normalize();
     const dot = worldPos.normalize().dot(camDir);
     const opacity = THREE.MathUtils.clamp(dot * 2 + 0.5, 0, 1);
-    (meshRef.current.material as THREE.MathUtils.MathUtils).opacity = hovered
+    (meshRef.current.material as THREE.MeshBasicMaterial).opacity = hovered
       ? 1
       : opacity * 0.8 + 0.1;
   });
