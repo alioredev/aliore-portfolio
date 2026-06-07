@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "about": "À propos",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "contact": "Contact",
+    "resume": "CV ↓"
+  },
+  "hero": {
+    "role": "Designer Web & Spécialiste IA",
+    "tagline": "Construire des expériences numériques intelligentes",
+    "brand": "Aliore",
+    "cta_projects": "Voir les projets",
+    "cta_contact": "Me contacter",
+    "scroll": "défiler"
+  },
+  "about": {
+    "label": "À propos",
+    "heading": "Façonner l'avenir,",
+    "heading_italic": "un projet à la fois.",
+    "bio": "Je suis Ali Gholami, designer web et spécialiste IA concentré sur la création de produits numériques intelligents et de haute qualité. Je combine l'ingénierie frontend avec l'intégration IA pour créer des expériences à la fois fonctionnelles et raffinées. Je développe actuellement Aliore — ma marque personnelle pour les clients et collaborations internationaux.",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "stats": {
+    "years": "An de création",
+    "projects": "Projets",
+    "languages": "Langues",
+    "brand": "Marque"
+  },
+  "skills": {
+    "label": "Compétences",
+    "heading": "Ce avec quoi",
+    "heading_italic": "je travaille"
+  },
+  "projects": {
+    "label": "Projets",
+    "heading": "Travaux",
+    "heading_italic": "sélectionnés",
+    "live": "Démo live ↗",
+    "github": "GitHub ↗",
+    "more": "Plus sur GitHub →"
+  },
+  "contact": {
+    "label": "Contact",
+    "heading": "Construisons",
+    "heading_italic": "quelque chose.",
+    "subtext": "Disponible pour des projets freelance et des collaborations mondiales.",
+    "location": "Basé en Iran · Ouvert aux opportunités à distance",
+    "email_label": "Email",
+    "github_label": "GitHub",
+    "linkedin_label": "LinkedIn",
+    "telegram_label": "Telegram",
+    "rubika_label": "Rubika"
+  },
+  "footer": {
+    "copy": "© 2026 Ali Gholami — Aliore",
+    "domain": "aliore"
+  },
+  "theme": {
+    "dark": "Sombre",
+    "light": "Clair"
+  },
+  "testimonials": {
+    "label": "Témoignages",
+    "heading": "Ce que disent",
+    "heading_italic": "les clients.",
+    "note": "Retours authentiques de collaborations réelles"
+  }
+}
