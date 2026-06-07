@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact",
+    "resume": "Resume ↓"
+  },
+  "hero": {
+    "role": "Web Designer & AI Specialist",
+    "tagline": "Building intelligent digital experiences",
+    "brand": "Aliore",
+    "cta_projects": "View Projects",
+    "cta_contact": "Get In Touch",
+    "scroll": "scroll"
+  },
+  "about": {
+    "label": "About",
+    "heading": "Crafting the future,",
+    "heading_italic": "one project at a time.",
+    "bio": "I'm Ali Gholami, a web designer and AI specialist focused on building intelligent, high-quality digital products. I combine clean frontend engineering with AI integration to create experiences that are both functional and refined. Currently building Aliore — my personal brand for international clients and collaborations.",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "stats": {
+    "years": "Year Building",
+    "projects": "Projects",
+    "languages": "Languages",
+    "brand": "Brand"
+  },
+  "skills": {
+    "label": "Skills",
+    "heading": "What I",
+    "heading_italic": "Work With"
+  },
+  "projects": {
+    "label": "Projects",
+    "heading": "Selected",
+    "heading_italic": "Work",
+    "live": "Live Demo ↗",
+    "github": "GitHub ↗",
+    "more": "More on GitHub →"
+  },
+  "contact": {
+    "label": "Contact",
+    "heading": "Let's build",
+    "heading_italic": "something.",
+    "subtext": "Available for freelance projects and collaborations worldwide.",
+    "location": "Based in Iran · Open to remote opportunities worldwide",
+    "email_label": "Email",
+    "github_label": "GitHub",
+    "linkedin_label": "LinkedIn",
+    "telegram_label": "Telegram",
+    "rubika_label": "Rubika"
+  },
+  "footer": {
+    "copy": "© 2026 Ali Gholami — Aliore",
+    "domain": "aliore"
+  },
+  "theme": {
+    "dark": "Dark",
+    "light": "Light"
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "heading": "What clients",
+    "heading_italic": "say.",
+    "note": "Real feedback from real collaborations"
+  }
+}
