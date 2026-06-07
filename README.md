@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://aliore.ir/logo.png" alt="Aliore" width="64" />
+<img src="" alt="Aliore" width="64" />
 
 ## Hi, I'm Ali Gholami 👋
 
@@ -8,7 +8,8 @@
 
 I build intelligent, high-quality digital products that combine clean frontend engineering with AI integration.
 
-[![Website](https://img.shields.io/badge/aliore.ir-Visit-C9A96E?style=for-the-badge)](https://aliore.ir)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ali-gholami-8809x)
+[![Website](https://img.shields.io/badge/aliore-Visit-C9A96E?style=for-the-badge)]()
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ali-gholami-8809x)
 [![Telegram](https://img.shields.io/badge/Telegram-Message-26A5E4?style=for-the-badge&logo=telegram)](https://t.me/aliore_dev)
 
