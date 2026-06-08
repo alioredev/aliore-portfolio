@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="" alt="Aliore" width="64" />
+<img src="public/logo.png" alt="Aliore" width="64" />
 
 ## Hi, I'm Ali Gholami 👋
 
